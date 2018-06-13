@@ -45,9 +45,12 @@ body,html{
 .shadow-lg {
     box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
     padding:5%;
+    padding-top: 3%;
     margin:6%;
+    margin-top: 2%;
     text-align: left;
 }
+
 
 .bg-white {
     background-color: #fff!important;
