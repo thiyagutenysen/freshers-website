@@ -296,3 +296,13 @@ p{
 
 
 }
+
+.footer {
+   width:100%;
+   font-size: 1.5rem;
+   position:absolute;
+   z-index:1000;
+   color:white;
+   background-color: rgba(0, 0, 0, 0.8);
+   padding-left: 40%;
+}
