@@ -2,10 +2,9 @@ body,html{
 	height:100%;
 }
 
-
 .navbar {
       margin-bottom: 0;
-      background-color: #f4511e;
+      background-color: #080808;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -142,4 +141,14 @@ body,html{
     width:7%;
   }
 
+}
+
+.footer {
+   width:100%;
+   font-size: 1.5rem;
+   position:absolute;
+   z-index:1000;
+   color:white;
+   background-color: rgba(0, 0, 0, 0.8);
+   padding-left: 40%;
 }

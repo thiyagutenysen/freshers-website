@@ -1,275 +1,49 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Fresher Site</title>
-
-	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<!--Required css files-->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-	<link rel='stylesheet' href="style.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-    <!--Requireed javascript files-->
-	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-</head>
-
-<body>
-	<nav class="navbar navbar-inverse navbar-fixed-top">
-  		<div class="container-fluid">
-    		<div class="navbar-header">
-      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        			<span class="icon-bar"></span>
-        			<span class="icon-bar"></span>
-        			<span class="icon-bar"></span> 
-      			</button>
-      			<a class="navbar-brand" href="index.html">Indian Institute Of Technology, Madras</a>
-    		</div>
-   			<div class="collapse navbar-collapse" id="myNavbar">
-      			<ul class="nav navbar-nav navbar-right">
-        			<li class="active"><a href="index.html">Home</a></li>
-        			<li class="dropdown">
-        				<a class="dropdown-toggle" data-toggle="dropdown" href="#">
-        					Departments
-        					<span class="caret"></span>
-        				</a>
-        				<ul class="dropdown-menu" style='background-color: #f4511e;'>
-          					<li><a href="pages/courses.html">Courses</a></li>
-          					<li><a href="pages/placements.html">Placements</a></li>
-        				</ul>
-      				</li>
-        			<li><a href="pages/scholarships.html">Scholarships</a></li> 
-      			</ul>
-    		</div>
-  		</div>
-	</nav>
-	<div id="myCarousel" class="carousel slide" data-ride="carousel">
-  		<!-- Indicators -->
-  		<ol class="carousel-indicators">
-    		<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-   			<li data-target="#myCarousel" data-slide-to="1"></li>
-    		<li data-target="#myCarousel" data-slide-to="2"></li>
-    		<li data-target="#myCarousel" data-slide-to="3"></li>
-        <li data-target="#myCarousel" data-slide-to="4"></li>
-  		</ol>
-
-  		<!-- Wrapper for slides -->
-  		<div class="carousel-inner">
-  			<div class="item active">
-      			<img src="img/slider/5.jpg" alt="CFI">
-      			<div class="carousel-caption">
-        			<h1><strong>Centre For Innovation</strong></h1>
-       				<h3>Among the general demographic, students are more likely to come up with new, creative and outrageous ideas. Add to this the fact that students at IIT Madras are competent in engineering studies, we get a potent mix of creative and skilled set of people who are ready to innovate.
-       				<a href='http://cfi.iitm.ac.in/main/'><button type="button" class="btn btn-danger btn-sm">Know More</button></a>
-       			</h3>
-      			</div>
-    		</div>
-
-    		<div class="item">
-      			<img src="img/slider/2.jpg" alt="IITM">
-      			<div class="carousel-caption">
-      				<h1><strong>IITM</strong></h1>
-        			<h3>IIT Madras has been ranked the top engineering institute in India for three years in a row (2016-2018) by the National Institutional Ranking Framework of the Ministry of Human Resource Development.
-
-        				<a class="slider_btn" href="https://en.wikipedia.org/wiki/Indian_Institute_of_Technology_Madras">
-        					<button type="button" class="btn btn-primary">
-        						Know More
-        					</button>
-        				</a>
-        			</h3>
-                    
-      			</div>
-    		</div>
-
-    		<div class="item">
-    			<img src="img/slider/3.jpg" alt="Prakriti">
-      			<div class="carousel-caption">
-        			<h1><strong>Prakriti</strong></h1>
-                    <h3>The Wildlife Club of IIT Madras, founded by a group of wildlife enthusiasts comprising of students, faculty, residents and alumni of IIT Madras. The formation of the club was spurred by a growing recognition of the need to protect the unique biodiversity of the IIT Madras campus.
-                 		<a class="slider_btn" href="http://hsb.iitm.ac.in/~prakriti/">
-                 			<button type="button" class="btn btn-success">
-        						Know More
-        					</button>
-                 		</a>   	
-                    </h3>
-      			</div>
-    		</div>
-
-    		<div class="item">
-      			<img src="img/slider/4.png" alt="Shaastra">
-      			<div class="carousel-caption"  id='shaastra'>
-        			<h1><strong>Shaastra</strong></h1>
-                    <h3>Shaastra is the annual technical festival of the Indian Institute of Technology Madras (IITM), Chennai, India. The festival consists of various engineering, science and technology competitions, summits, lectures, video conferences, exhibitions, demonstrations and workshops.
-                    	<a class="slider_btn" href="https://www.facebook.com/Shaastra/">	
-                    		<button type="button" class="btn btn-default">
-        						Know More
-        					</button>
-                    	</a>
-                    </h3>
-      			</div>
-    		</div>
-
-        <div class="item active">
-            <img src="img/slider/6.png" alt="saarang">
-            <div class="carousel-caption">
-              <h1><strong>Saarang</strong></h1>
-              <h3>
-                Saarang is the annual social and cultural festival of IIT Madras. It is a 5 day long festival usually extending from Wednesday to the second Sunday of the year which receives a footfall of over 60,000+ people from over 500 colleges all across the country.
-              <a href='https://www.saarang.org/'><button type="button" class="btn btn-danger btn-sm">Know More</button></a>
-            </h3>
-            </div>
-        </div>
-
-    		
-
-  		</div>
-
-  		<!-- Left and right controls -->
-  		<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-    		<span class="glyphicon glyphicon-chevron-left"></span>
-    		<span class="sr-only">Previous</span>
-  		</a>
-  		<a class="right carousel-control" href="#myCarousel" data-slide="next">
-    		<span class="glyphicon glyphicon-chevron-right"></span>
-    		<span class="sr-only">Next</span>
-  		</a>
-	</div>
-	<br><br>
-	<div class='container'>
-		<div class='row'>
-			<div class='col-lg-6 col-lg-offset-3'>
-				<h1 id='about'><strong>About Us</strong></h1>
-				<br>
-			</div>
-		</div>
-		<div class='row  slideanim'>
-			<div class='col-lg-6 col-sm-6'>
-				<br><br><br>
-				<img src='img/about.jpg' id='about-img'>
-			</div>
-			<div class='col-lg-6 col-sm-6'>
-				
-				<div id='about-header'>
-					<i class="glyphicon glyphicon-globe"></i>
-					<h2><strong>Welcome</strong></h2>
-					<p>Indian Institute of Technology Madras is one among the foremost institutes of national importance in higher technological education, basic and applied research. In 1956, the German Government offered technical assistance for establishing an institute of higher education in engineering in India. The first Indo-German agreement in Bonn, West Germany for the establishment of the Indian Institute of Technology at Madras was signed in 1959.IIT Madras is a residential institute with nearly 550 faculty,8000 studentsand 1250 administrative & supporting staff.It has established itself as a premier centre for teaching, research and industrial consultancy in the country.
-						<a href='https://www.iitm.ac.in/about'>
-           		<button type="button" class="btn btn-info">
-        			Know More
-        		</button>
-        	</a>
-					</p>
-       
-				</div>
-			</div>
-			    </div>
-			    <br><br>
-         <div class='row  slideanim'>
-			<div class='col-lg-6 col-sm-6'>
-				
-				<div id='nirf-header'>
-					<i class="glyphicon glyphicon-star"></i>
-					<h2><strong>NIRF Ranking</strong></h2>
-					<p>
-					The Indian Institute of Technology Madras (IIT Madras) has, for the third consecutive year, emerged as the top-ranked engineering institute in the country. It was declared as the number one among engineering institutes in the India Rankings 2018 conducted by National Institutional Rankings Framework (NIRF) of the Ministry of Human Resource Development, Government of India. IIT Madras also retained its position in the overall category, where it was adjudged as the 'Second Best Institution' in the country, next only to Indian Institute of Science Bangalore, under the overall ranking of institutions.
-					</p>
-            		<a href='https://www.iitm.ac.in/content/nirf-reports'>
-           				<button type="button" class="btn btn-primary">
-        					Know More
-        				</button>
-        			</a>
-        		</div>
-        	</div>
-           			<div class='col-lg-6 col-sm-6'>
-           				<br><br>
-						<img src='img/nirf.jpg' id='about-img'>
-					</div>
-				</div>
-				<br><br><br>
-				<div class='row  slideanim'>
-			<div class='col-lg-6 col-sm-6'>
-				<img src='img/clubs.png' id='clubs-img'>
-			</div>
-			<div class='col-lg-6 col-sm-6'>
-				
-				<div id='club-header'>
-					<i class="glyphicon glyphicon-heart"></i>
-					<h2><strong>Clubs</strong></h2>
-					<p>Apart from the cultural activities and sporting that go on throughout the academic year, there are many other forms of recreation open to the students. There are a number of clubs including the Music Club, Astronomy Club, Film Club, Hiking Club etc. Students get to improve their skills and pick up new skills with the help of the clubs. The Institute also has various Sabhas and Mandals which are informal gatherings of people having a similar linguistic background. The Hindi Mitra Mandal, the Kannada Sangha, the Telugu Samskritika Samiti etc. are a few of them.
-					</p>
-					<br>
-					<div class="btn-group btn-group-justified">
-  						<a href="http://musicclub.iitm.ac.in" class="btn btn-success">Music</a>
-  						<a href="http://www.cfi-iitm.org/new" class="btn btn-success">CFI</a>
-  						<a href="http://www.astro.iitm.ac.in/" class="btn btn-success">Astronomy</a>
-  						<a href="https://sites.google.com/site/thespeakingclub/" class="btn btn-success">Speaking</a>
-  						<a href="https://home.iitm.ac.in/prakriti/prakriti/" class="btn btn-success">Wildlife</a>
-					</div>
-       
-				</div>
-			</div>
-			    </div>
-			    <br><br><br><br>
-			    <div class='row'  id='campus-life'>
-			    	<h1><strong>Campus Life</strong></h1>
-			    	<div class='col-lg-4 col-sm-4 slideanim'>
-			    		<br><br>
-			    		<i class="fa fa-wifi"></i>
-			    		<p><br>The Internet, a vast pool of information unparalleled by any other entity, has become an integral part of our lives. A day without Internet is unthinkable for most.The institute provides a 24/7 internet service at the hostel rooms and other parts of the institute.</p>
-			    	</div>
-			    	<div class='col-lg-4 col-sm-4 slideanim'>
-			    		<br><br>
-			    		<i class="fa fa-futbol-o"></i>
-			    		<p><br>To ensure overall development of every student, the institute provides all the required facilities for sports and recreation. There is a large Gymnasium, a swimming pool, a football field, a tennis court, a hockey field and a cricket stadium.</p>
-			    	</div>
-
-
-			    	<div class='col-lg-4 col-sm-4 slideanim'>
-			    		<br><br>
-			    		<i class="fa fa-trophy"></i>
-			    		<p><br>TechSoc is a year long battle amongst the very best minds in the nation producing engineering brilliance and innovation.This is were real engineering happens for the inter hostel championship.</p>
-			    	</div>
-			    	    </div>
-			    	<div class='row'>
-			    	<div class='col-lg-4 col-sm-4 slideanim'>
-			    		<br><br>
-			    		<i class="fa fa-book"></i>
-			    		<p><br>Central Library which is one of the central support services of IIT Madras. The mission of the Central Library is to provide information services and access to bibliographic and full text digital and printed resources to support the scholarly and informational needs of the Institute Community.</p>
-			    	</div>
-			    	<div class='col-lg-4 col-sm-4 slideanim'>
-			    		<br><br>
-			    		<i class="fa fa-fort-awesome"></i>
-			    		<p><br>Saarang is the annual social and cultural festival of IIT Madras. It is a 5 day long festival usually extending from Wednesday to the second Sunday of the year which receives a footfall of over 60,000+ people from over 500 colleges all across the country.</p>
-			    	</div>
-
-			    	<div class='col-lg-4 col-sm-4 slideanim'>
-			    		<br><br>
-			    		<i class="fa fa-code-fork"></i>
-			    		<p><br>Shaastra is the annual technical festival of the Indian Institute of Technology Madras (IITM).The festival traditionally held over four days and four nights during the first week of January. It has so far seen eighteen editions, having started in its current avatar in the year 2000.</p>
-			    	</div>
-			    </div>
-			    <br><br><br><br><br>
-
-			    </div>
- <script>
-$(document).ready(function(){
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
-        }
-    });
-  });
-})
-</script>
-</body>
-
-
-</html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<div>
+    <img src="img/Home/bg1.png" style="width:100%; opacity:0.6;"/>
+</div>
+<div class="centered">
+<ul class="menu">
+    <li class="one">
+      <a href="pages/about_us.html">
+        <span class="icon"><b>About</b></span>
+      </a>
+    </li>
+    <li class="two">
+      <a href="pages/courses.html">
+        <span class="icon"><b>Courses</b></span>
+      </a>
+    </li>
+    <li class="three">
+      <a href="pages/placements.html">
+        <span style="text-align: center;" class="icon"><b>Postings</b></span>
+      </a>
+    </li>
+    <li class="four">
+      <a href="pages/scholarships.html">
+        <span class="icon"><b>bursary</b></span>
+      </a>
+    </li>
+    <li class="five">
+      <a href="pages/guide.html">
+        <span class="icon"><b>Guide</b></span>
+      </a>
+    </li>
+    <li class="six">
+      <a href="pages/articles.html">
+        <span class="icon"><b>Articles</b></span>
+      </a>
+    </li>
+  </ul>
+  
+  <svg height="0" width="0">
+    <defs>
+      <clipPath clipPathUnits="objectBoundingBox" id="sector">
+        <path fill="none" stroke="#111" stroke-width="1" class="sector" d="M0.5,0.5 l0.5,0 A0.5,0.5 0 0,0 0.75,.066987298 z"></path>
+      </clipPath>
+    </defs>
+  </svg>
+</div>
+<div class="centered">
+    <img src="img/Home/logo.png" style="width:240px;height:240px;"/>
+</div>

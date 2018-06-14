@@ -2,9 +2,10 @@
 body,html{
   height:100%;
 }
+
 .navbar {
       margin-bottom: 0;
-      background-color: #f4511e;
+      background-color: #080808;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -34,7 +35,9 @@ body,html{
 .shadow-lg {
     box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
     padding:5%;
+    padding-top: 3%;
     margin:6%;
+    margin-top: 2%;
     text-align: left;
 }
 
@@ -147,4 +150,14 @@ h4{
     .collapse.in{
         display:block !important;
     }
+}
+
+.footer {
+   width:100%;
+   font-size: 1.5rem;
+   position:absolute;
+   z-index:1000;
+   color:white;
+   background-color: rgba(0, 0, 0, 0.8);
+   padding-left: 40%;
 }
