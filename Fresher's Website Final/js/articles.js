@@ -11,6 +11,7 @@ $(document).ready(function(){
     );
 
   $(".back").click(function(){
+     $(window).scrollTop(0);
     location.reload();  }
     );
   var id = 0;
