@@ -2,6 +2,7 @@ body, html {
     height: 100%;
 }
 
+/*Setting background*/
 .bg { 
     /* The image used */
     background-image: url('../img/articles.jpg');
@@ -18,12 +19,11 @@ body, html {
     opacity:0.8;
 }
 
-
-
+/*Styles for navbar*/
 .navbar {
       margin-bottom: 0;
       background-color: #080808;
-      z-index: 9999;
+      z-index: 99;
       border: 0;
       font-size: 12px !important;
       line-height: 1.42857143 !important;
@@ -31,7 +31,7 @@ body, html {
       border-radius: 0;
       font-family: Montserrat, sans-serif;
   }
-  .navbar li a, .navbar .navbar-brand {
+  .navbar li a,.navbar .navbar-brand{
       color: #fff !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
@@ -43,7 +43,24 @@ body, html {
       color: #fff !important;
   }
 
+  .jumbotron {
+      background-color: #080808 !important;
+      color: #fff;
+      padding-top:60px;
+      margin-bottom: 0px;
+      width:100%;
+      margin-right: 0px !important;
+      padding-bottom: 1%;
+      padding-left:0px;
+      font-size:20px;
+      padding-right:0px;
+      position:relative;
+      font-family: Montserrat, sans-serif;
+      display:none;
+      z-index:98;
+  }
 
+/*Boxes enclosing articles and article summary*/
 .article-summary,.article{
 	width:90%;
   	background: rgba(255, 255, 255, 0.6);
@@ -93,6 +110,7 @@ body, html {
 	height:300px;
 }
 
+/*Box with a larger shadow*/
 .shadow-lg {
     box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
     padding:2%;
@@ -103,11 +121,13 @@ body, html {
     border-color:#f4511e;
 }
 
+/*Cards in summary*/
 .w3-card-4{
 	min-height:660px;
 	max-height: 660px;
 }
 
+/*By line of alumni sayings*/
 .by-line{
 	font-size: 24px;
 	float:left !important;
@@ -116,6 +136,7 @@ body, html {
 	font-family: serif;
 }
 
+/*Favicons size*/
 .fa-facebook-official{
 	color: #3b5998;
 	font-size:50px;
@@ -126,6 +147,7 @@ body, html {
 	color:#e4405f;
 	font-size:50px;
 }
+
 .links{
 	text-align: center;
 }
@@ -140,6 +162,7 @@ body, html {
 	text-align: center;
 }
 
+/*Sayings of alumni*/
 .quotes{
 	background-color: rgba(0, 0, 0, 0.6) !important;
 	width:90%;
@@ -162,152 +185,7 @@ body, html {
   height:100% !important;
 }
 
-
-.slideanim-top,.slideanim,.slideanim-left,.slideanim-right{visibility:hidden;}
-.left,.rig,.slideanim-left1,.slideanim-right1{
-  visibility:hidden;
-}
-  .slide{
-      animation-name: slide-right;
-      -webkit-animation-name: slide;
-      animation-duration: 1s;
-      -webkit-animation-duration: 1s;
-      visibility: visible;
-  }
-
-  .slide-right
-  {
-      animation-name: slide-right;
-      -webkit-animation-name: slide-right;
-      animation-duration: 1s;
-      -webkit-animation-duration: 1s;
-      visibility: visible;
-  }
-
-
-  .slide-left
-  {
-      animation-name: slide-left;
-      -webkit-animation-name: slide-left;
-      animation-duration: 1s;
-      -webkit-animation-duration: 1s;
-      visibility: visible;
-  }
-
-  .slide-top{
-    animation-name: slide-top;
-      -webkit-animation-name: slide-top;
-      animation-duration: 1s;
-      -webkit-animation-duration: 1s;
-      visibility: visible;
-  }
-
-  .slide-left1
-  {
-      animation-name: slide-left1;
-      -webkit-animation-name: slide-left1;
-      animation-duration: 1s;
-      -webkit-animation-duration: 1s;
-      visibility: visible;
-  }
-
-.slide-right1
-  {
-      animation-name: slide-right1;
-      -webkit-animation-name: slide-right1;
-      animation-duration: 1s;
-      -webkit-animation-duration: 1s;
-      visibility: visible;
-  }
-
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-
-  @keyframes slide-right {
-    0% {
-      opacity: 0;
-      transform: translateX(-70%);
-    } 
-    100% {
-      opacity: 1;
-      transform: translateX(0%);
-    }
-  }
-  @-webkit-keyframes slide-right {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateX(-70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateX(0%);
-    }
-  }
-
-
-
-
-  @keyframes slide-top {
-    0% {
-      opacity: 0;
-      transform: translateY(-70%);
-    } 
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
-    }
-  }
-  @-webkit-keyframes slide-top {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(-70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
-    }
-  }
-
-
-    @keyframes slide-left {
-    0% {
-      opacity: 0;
-      transform: translateX(70%);
-    } 
-    100% {
-      opacity: 1;
-      transform: translateX(0%);
-    }
-  }
-  @-webkit-keyframes slide-right {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateX(70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateX(0%);
-    }
-  }
-
+/*Back Icon*/
 .back {
     position: fixed;
     left: 0;
@@ -326,6 +204,7 @@ body, html {
     height:70px;
 }
 
+/*Footer*/
 .footer {
    width:100%;
    font-size: 1.5rem;
@@ -348,4 +227,154 @@ body, html {
 
 .coming-soon{
   vertical-align: middle;
+}
+
+/*Animations*/
+.slideanim-top,
+.slideanim,
+.slideanim-left,
+.slideanim-right,
+.left,
+.rig{visibility:hidden;}
+
+
+.slide{
+      animation-name: slide-right;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+}
+
+.slide-right
+{
+      animation-name: slide-right;
+      -webkit-animation-name: slide-right;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+ }
+
+
+.slide-left
+{
+      animation-name: slide-left;
+      -webkit-animation-name: slide-left;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+}
+
+.slide-top{
+    animation-name: slide-top;
+      -webkit-animation-name: slide-top;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+}
+
+
+@keyframes slide {
+  0% {
+     opacity: 0;
+    transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    opacity: 0;
+    transform: translateX(-70%);
+  } 
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+@-webkit-keyframes slide-right {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(-70%);
+  } 
+  100% {
+    opacity: 1;
+    -webkit-transform: translateX(0%);
+  }
+}
+
+
+  @keyframes slide-top {
+    0% {
+      opacity: 0;
+      transform: translateY(-70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  @-webkit-keyframes slide-top {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+
+    @keyframes slide-left {
+    0% {
+      opacity: 0;
+      transform: translateX(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateX(0%);
+    }
+  }
+  @-webkit-keyframes slide-right {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+    }
+  }
+
+
+@media screen and (max-width:380px){
+   .navbar-toggle{
+    width:12%;
+    float:left;
+  }
+  .head{
+    padding-top:0px;
+  }
+  .head>strong{
+    font-size:50px;
+    padding-bottom:0px;
+  }
+  .head>h3{
+    font-size:18px;
+  }
 }

@@ -10,7 +10,11 @@ $(document).ready(function(){
     $(".back").show();
   }
     );
-
+  if ($(window).width() <= 380) {  
+        $(".navbar-brand").hide();
+        $(".jumbotron").show();
+        $(".jumbotron").css("width",""+$(window).width());
+}
   $(".back").click(function(){
      $(window).scrollTop(0);
     location.reload();  }
