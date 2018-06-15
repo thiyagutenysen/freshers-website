@@ -5,6 +5,7 @@ $(document).ready(function(){
     $("#"+id).show();
     $("#"+id).addClass("slide");
     $(window).scrollTop(0);
+    $(".head").hide();
     i = 0;
     $(".back").show();
   }
@@ -16,17 +17,7 @@ $(document).ready(function(){
     );
   var id = 0;
 
-  $("#17").each(function(){
-          $(this).addClass("slide");
-    });
 
-    $("#16").each(function(){
-          $(this).addClass("slide-right");
-    });
-
-    $("#18").each(function(){
-      $(this).addClass("slide-left");
-        });
     var i = 1;
   $(window).scroll(function() {
     $(".slideanim").each(function(){
@@ -51,6 +42,15 @@ $(document).ready(function(){
       var winTop = $(window).scrollTop();
         if (pos < winTop + 600) {
           $(this).addClass("slide-left");
+        }
+    });
+
+    $(".slideanim-top").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide-top");
         }
     });
     if(i===0){

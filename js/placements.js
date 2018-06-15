@@ -15,6 +15,7 @@ $(document).ready(function(){
   	$('#'+id).show();
   	 $('#'+id).addClass('course-active');
   	 $('#depart').html(depart);
+     $(".footer").css({"margin-top":"0px"})
   }
   	);
 });
