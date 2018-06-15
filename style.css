@@ -84,6 +84,10 @@
   font-family: Indie Flower;
   font-size: 25px;
 }
+.why{
+  font-size: 23px !important;
+  padding-bottom: 8%;
+}
 p {
   text-align: center;
   width: 80%;
